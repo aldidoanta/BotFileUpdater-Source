@@ -1,0 +1,88 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_circlet"						"ITEM_CORE"
+				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_magic_stick"					"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_boots"						"ITEM_CORE"
+
+				"item_mantle"					"ITEM_CORE"
+				"item_recipe_null_talisman"		"ITEM_CORE"
+				"item_null_talisman"			"ITEM_DERIVED"
+
+				"item_energy_booster"				"ITEM_CORE"
+				"item_arcane_boots"					"ITEM_DERIVED"
+
+				"item_helm_of_iron_will"		"ITEM_EXTENSION"
+				"item_recipe_veil_of_discord"		"ITEM_EXTENSION"
+				"item_veil_of_discord"			"ITEM_DERIVED"
+
+				"item_ogre_axe"				"ITEM_EXTENSION"
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_recipe_force_staff"		"ITEM_EXTENSION"
+				"item_force_staff"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"					"ITEM_LUXURY"
+				"item_mystic_staff"					"ITEM_LUXURY"
+				"item_void_stone"					"ITEM_LUXURY"
+				"item_sheepstick"					"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_refresher"			"ITEM_LUXURY"
+				"item_refresher"				"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"lina_light_strike_array"
+				"2"		"lina_fiery_soul"
+				"3"		"lina_dragon_slave"
+				"4"		"lina_dragon_slave"
+				"5"		"lina_dragon_slave"
+				"6"		"lina_laguna_blade"
+				"7"		"lina_dragon_slave"
+				"8"		"lina_fiery_soul"
+				"9"		"lina_light_strike_array"
+				"10"	"lina_light_strike_array"
+				"11"	"lina_laguna_blade"
+				"12"	"lina_light_strike_array"
+				"13"	"lina_fiery_soul"
+				"14"	"lina_fiery_soul"
+				"15"	"attribute_bonus"
+				"16"	"lina_laguna_blade"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"					"DOTA_BOT_STUN_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"1"
+				"RequiresBabysit"		"3"
+				"ProvidesBabysit"		"2"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"3"			}
+		}

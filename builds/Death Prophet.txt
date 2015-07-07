@@ -1,0 +1,93 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+
+				"item_mantle"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_mantle"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_ring_of_protection"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_vitality_booster"				"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_rod_of_atos"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_EXTENSION"
+				"item_mystic_staff"				"ITEM_EXTENSION"
+				"item_recipe_shivas_guard"			"ITEM_EXTENSION"
+				"item_shivas_guard"				"ITEM_DERIVED"
+
+				"item_point_booster"				"ITEM_EXTENSION"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_orb_of_venom"				"ITEM_EXTENSION"
+				"item_skadi"					"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_sheepstick"				"ITEM_DERIVED"	
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+
+				"item_blade_of_alacrity"			"ITEM_LUXURY"
+				"item_boots_of_elves"				"ITEM_LUXURY"
+				"item_recipe_yasha"				"ITEM_LUXURY"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_recipe_manta"				"ITEM_LUXURY"
+				"item_manta"					"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"death_prophet_carrion_swarm"
+				"2"		"death_prophet_witchcraft"
+				"3"		"death_prophet_carrion_swarm"
+				"4"		"death_prophet_witchcraft"
+				"5"		"death_prophet_carrion_swarm"
+				"6"		"death_prophet_exorcism"
+				"7"		"death_prophet_carrion_swarm"
+				"8"		"death_prophet_witchcraft"
+				"9"		"death_prophet_witchcraft"
+				"10"	"death_prophet_silence"
+				"11"	"death_prophet_exorcism"
+				"12"	"death_prophet_silence"
+				"13"	"death_prophet_silence"
+				"14"	"death_prophet_silence"
+				"15"	"attribute_bonus"
+				"16"	"death_prophet_exorcism"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"				"DOTA_BOT_PUSH_SUPPORT" 
+			"LaningInfo"
+			{
+				"SoloDesire"			"3"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"3"
+				"SurvivalRating"		"4"
+				"RequiresFarm"			"3"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"2"			}
+		}

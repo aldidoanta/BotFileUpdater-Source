@@ -1,0 +1,96 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_boots"					"ITEM_CORE"				
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_gauntlets"				"ITEM_CORE"
+				"item_gauntlets"				"ITEM_CORE"
+				"item_recipe_urn_of_shadows"			"ITEM_CORE"
+				"item_urn_of_shadows"				"ITEM_DERIVED"
+
+				"item_energy_booster"			"ITEM_EXTENSION"
+				"item_arcane_boots"				"ITEM_DERIVED"
+
+				"item_chainmail"				"ITEM_EXTENSION"
+				"item_branches"					"ITEM_EXTENSION"
+				"item_recipe_buckler"			"ITEM_EXTENSION"
+				"item_buckler"					"ITEM_DERIVED"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_branches"					"ITEM_EXTENSION"
+				"item_recipe_headdress"			"ITEM_EXTENSION"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_recipe_mekansm"			"ITEM_EXTENSION"
+				"item_mekansm"					"ITEM_DERIVED"
+
+				"item_vitality_booster"				"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_rod_of_atos"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_sheepstick"				"ITEM_DERIVED"
+
+				"item_recipe_guardian_greaves"			"ITEM_EXTENSION"
+				"item_guardian_greaves"				"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_EXTENSION"
+				"item_boots"					"ITEM_CORE"
+				"item_travel_boots"			"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_EXTENSION"
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"dazzle_shallow_grave"
+				"2"		"dazzle_shadow_wave"
+				"3"		"dazzle_poison_touch"
+				"4"		"dazzle_poison_touch"
+				"5"		"dazzle_poison_touch"
+				"6"		"dazzle_shadow_wave"
+				"7"		"dazzle_weave"
+				"8"		"dazzle_shadow_wave"
+				"9"		"dazzle_shadow_wave"
+				"10"	"dazzle_poison_touch"
+				"11"	"dazzle_weave"
+				"12"	"dazzle_shallow_grave"
+				"13"	"dazzle_shallow_grave"
+				"14"	"dazzle_shallow_grave"
+				"15"	"attribute_bonus"
+				"16"	"dazzle_weave"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_PUSH_SUPPORT | DOTA_BOT_PURE_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"4"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"4"
+				"RequiresSetup"			"2"			}
+		}

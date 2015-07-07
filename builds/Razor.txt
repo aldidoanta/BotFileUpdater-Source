@@ -1,0 +1,101 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+				"item_ring_of_protection"		"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_boots"					"ITEM_CORE"
+				"item_slippers"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_ring_of_aquila"			"ITEM_DERIVED | ITEM_SELLABLE"
+
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_CORE"
+				"item_ogre_axe"				"ITEM_CORE"
+				"item_staff_of_wizardry"		"ITEM_CORE"
+				"item_blade_of_alacrity"		"ITEM_CORE"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_EXTENSION"
+				"item_travel_boots"				"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_EXTENSION"
+				"item_ring_of_health"			"ITEM_EXTENSION"
+				"item_pers"						"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+
+				"item_recipe_refresher"			"ITEM_EXTENSION"
+				"item_refresher"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_recipe_manta"				"ITEM_LUXURY"
+				"item_manta"					"ITEM_DERIVED"
+
+				"item_reaver"					"ITEM_LUXURY"
+				"item_vitality_booster"			"ITEM_LUXURY"
+				"item_recipe_heart"				"ITEM_LUXURY"
+				"item_heart"					"ITEM_DERIVED"
+
+				"item_demon_edge"					"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_monkey_king_bar"				"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"razor_plasma_field"
+				"2"		"razor_unstable_current"
+				"3"		"razor_plasma_field"
+				"4"		"razor_static_link"
+				"5"		"razor_plasma_field"
+				"6"		"razor_eye_of_the_storm"
+				"7"		"razor_plasma_field"
+				"8"		"razor_static_link"
+				"9"		"razor_unstable_current"
+				"10"	"razor_unstable_current"
+				"11"	"razor_eye_of_the_storm"
+				"12"	"razor_unstable_current"
+				"13"	"razor_static_link"
+				"14"	"razor_static_link"
+				"15"	"attribute_bonus"
+				"16"	"razor_eye_of_the_storm"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_SEMI_CARRY | DOTA_BOT_GANKER"
+			"LaningInfo"
+			{
+				"SoloDesire"			"4"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"0"
+				"RequiresSetup"			"2"			}
+		}

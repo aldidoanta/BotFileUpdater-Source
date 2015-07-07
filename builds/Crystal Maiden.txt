@@ -1,0 +1,91 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"	
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_ring_of_protection"		"ITEM_CORE"
+				"item_ring_of_regen"			"ITEM_CORE"
+				"item_tranquil_boots"			"ITEM_DERIVED"
+				"item_gauntlets"				"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_recipe_bracer"			"ITEM_CORE"
+				"item_bracer"					"ITEM_DERIVED"
+				"item_ring_of_regen"			"ITEM_CORE"	
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_recipe_force_staff"		"ITEM_EXTENSION"
+
+				"item_force_staff"				"ITEM_DERIVED"
+				"item_robe"						"ITEM_EXTENSION"
+				"item_recipe_ancient_janggo"		"ITEM_EXTENSION"
+				"item_ancient_janggo"			"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_recipe_sphere"			"ITEM_LUXURY"
+				"item_sphere"					"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"		"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_recipe_black_king_bar"		"ITEM_LUXURY"
+				"item_black_king_bar"			"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"crystal_maiden_crystal_nova"
+				"2"		"crystal_maiden_frostbite"
+				"3"		"crystal_maiden_brilliance_aura"
+				"4"		"crystal_maiden_brilliance_aura"
+				"5"		"crystal_maiden_frostbite"
+				"6"		"crystal_maiden_brilliance_aura"
+				"7"		"crystal_maiden_brilliance_aura"
+				"8"	 	"crystal_maiden_frostbite"
+				"9"		"crystal_maiden_frostbite"
+				"10"	"crystal_maiden_crystal_nova"
+				"11"	"crystal_maiden_freezing_field"
+				"12"	"crystal_maiden_freezing_field"
+				"13"	"crystal_maiden_crystal_nova"
+				"14"	"crystal_maiden_crystal_nova"
+				"15"	"attribute_bonus"
+				"16"	"crystal_maiden_freezing_field"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"
+
+			}
+			"HeroType"			"DOTA_BOT_PURE_SUPPORT"
+			"AggressionFactor"		"0.8"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"5"
+				"SurvivalRating"		"2"
+				"RequiresFarm"			"0"
+				"ProvidesSetup"			"0"
+				"RequiresSetup"			"3"			}
+		}

@@ -1,0 +1,89 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"		
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+
+
+				"item_ring_of_protection"		"ITEM_CORE"
+
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_boots"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_energy_booster"			"ITEM_CORE"
+				"item_arcane_boots"				"ITEM_DERIVED"
+				"item_point_booster"			"ITEM_EXTENSION"
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_refresher"			"ITEM_LUXURY"
+				"item_refresher"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"			"ITEM_LUXURY"
+				"item_shivas_guard"			"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_sheepstick"				"ITEM_DERIVED"	
+
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_necronomicon"				"ITEM_DERIVED"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"600"
+				"MaxPolygonsLOD1"	"450"			}
+			"Build"
+			{
+				"1"		"warlock_shadow_word"
+				"2"		"warlock_fatal_bonds"
+				"3"		"warlock_shadow_word"
+				"4"		"warlock_fatal_bonds"
+				"5"		"warlock_shadow_word"
+				"6"		"warlock_rain_of_chaos"
+				"7"		"warlock_shadow_word"
+				"8"		"warlock_fatal_bonds"
+				"9"		"warlock_fatal_bonds"
+				"10"	"attribute_bonus"
+				"11"	"warlock_rain_of_chaos"
+				"12"	"warlock_upheaval"
+				"13"	"warlock_upheaval"
+				"14"	"warlock_upheaval"
+				"15"	"warlock_upheaval"
+				"16"	"warlock_rain_of_chaos"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_PUSH_SUPPORT | DOTA_BOT_PURE_SUPPORT"
+			"LaningInfo"
+			"LaningInfo"
+			{
+			}
+		}

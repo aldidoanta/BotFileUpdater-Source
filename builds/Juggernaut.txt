@@ -1,0 +1,127 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_slippers"							"ITEM_CORE"
+				"item_branches"							"ITEM_CORE"
+				"item_slippers"							"ITEM_CORE"
+
+				"item_boots"							"ITEM_CORE"
+				"item_stout_shield"						"ITEM_CORE"
+				"item_poor_mans_shield"					"ITEM_DERIVED | ITEM_SELLABLE"
+
+
+				"item_blades_of_attack"					"ITEM_CORE"
+				"item_blades_of_attack"					"ITEM_CORE"
+				"item_phase_boots"						"ITEM_DERIVED"
+				"item_branches"							"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_stick"						"ITEM_CORE"
+				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_gauntlets"						"ITEM_EXTENSION"
+
+
+				"item_circlet"							"ITEM_EXTENSION"
+				"item_recipe_bracer"					"ITEM_EXTENSION"
+
+
+
+				"item_bracer"							"ITEM_DERIVED"
+				"item_robe"								"ITEM_EXTENSION"
+				"item_recipe_ancient_janggo"			"ITEM_EXTENSION"
+				"item_ancient_janggo"					"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_blade_of_alacrity"				"ITEM_EXTENSION"
+				"item_boots_of_elves"					"ITEM_EXTENSION"
+				"item_recipe_yasha"						"ITEM_EXTENSION"
+
+				"item_yasha"							"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"			"ITEM_EXTENSION"
+				"item_blade_of_alacrity"			"ITEM_EXTENSION"
+				"item_robe"					"ITEM_EXTENSION"
+				"item_recipe_diffusal_blade"			"ITEM_EXTENSION"
+				"item_diffusal_blade"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"						"ITEM_EXTENSION"
+				"item_recipe_manta"						"ITEM_EXTENSION"
+				"item_manta"							"ITEM_DERIVED"
+
+				"item_quelling_blade"				"ITEM_CORE"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"					"ITEM_DERIVED"				
+				"item_broadsword"				"ITEM_LUXURY"
+				"item_claymore"					"ITEM_LUXURY"
+				"item_battlefury"				"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_LUXURY"
+
+				"item_recipe_diffusal_blade"		"ITEM_EXTENSION"
+
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"					"ITEM_DERIVED"				
+				"item_broadsword"				"ITEM_LUXURY"
+				"item_claymore"					"ITEM_LUXURY"
+				"item_quelling_blade"				"ITEM_CORE"
+				"item_battlefury"				"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"juggernaut_blade_fury"
+				"2"		"attribute_bonus"
+				"3"		"juggernaut_blade_fury"
+
+				"4"		"juggernaut_healing_ward"
+
+				"5"		"juggernaut_blade_fury"
+				"6"		"juggernaut_omni_slash"
+				"7"		"juggernaut_blade_fury"
+
+
+				"8"		"juggernaut_blade_dance"
+				"9"		"juggernaut_blade_dance"
+
+
+				"10"	"juggernaut_blade_dance"
+				"11"	"juggernaut_omni_slash"
+				"12"	"juggernaut_blade_dance"
+				"13"	"juggernaut_healing_ward"
+				"14"	"juggernaut_healing_ward"
+
+				"15"	"attribute_bonus"
+
+				"16"	"juggernaut_omni_slash"
+				"17"	"juggernaut_healing_ward"
+
+
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+
+
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_SEMI_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"5"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"3"			}
+		}

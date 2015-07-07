@@ -1,0 +1,102 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+				"item_circlet"					"ITEM_CORE"
+				"item_slippers"					"ITEM_CORE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_wraith_band"				"ITEM_DERIVED"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_protection"		"ITEM_CORE"	
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+				"item_ring_of_aquila"			"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_boots_of_elves"			"ITEM_CORE"
+				"item_blade_of_alacrity"		"ITEM_CORE"
+				"item_recipe_yasha"				"ITEM_CORE"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_claymore"					"ITEM_EXTENSION"
+				"item_shadow_amulet"			"ITEM_EXTENSION"
+				"item_invis_sword"				"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_EXTENSION"
+				"item_travel_boots"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_EXTENSION"
+				"item_recipe_manta"				"ITEM_EXTENSION"
+				"item_manta"					"ITEM_DERIVED"
+
+				"item_broadsword"				"ITEM_LUXURY"
+				"item_blades_of_attack"			"ITEM_LUXURY"
+				"item_recipe_lesser_crit"		"ITEM_LUXURY"
+				"item_lesser_crit"				"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_recipe_greater_crit"		"ITEM_LUXURY"
+				"item_greater_crit"				"ITEM_DERIVED"
+
+				"item_talisman_of_evasion"		"ITEM_LUXURY"
+				"item_eagle"					"ITEM_LUXURY"
+				"item_quarterstaff"				"ITEM_LUXURY"
+				"item_butterfly"				"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_monkey_king_bar"			"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_sange"				"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+
+				"item_recipe_silver_edge"			"ITEM_EXTENSION"
+				"item_silver_edge"			"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"drow_ranger_frost_arrows"
+				"2"		"drow_ranger_trueshot"
+				"3"		"drow_ranger_frost_arrows"
+				"4"		"drow_ranger_trueshot"
+				"5"		"drow_ranger_frost_arrows"
+				"6"		"drow_ranger_marksmanship"
+				"7"		"drow_ranger_frost_arrows"
+				"8"		"drow_ranger_trueshot"
+				"9"		"drow_ranger_trueshot"
+				"10"	"drow_ranger_wave_of_silence"
+				"11"	"drow_ranger_marksmanship"
+				"12"	"drow_ranger_wave_of_silence"
+				"13"	"drow_ranger_wave_of_silence"
+				"14"	"drow_ranger_wave_of_silence"
+				"15"	"attribute_bonus"
+				"16"	"drow_ranger_marksmanship"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"4"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"5"
+				"ProvidesSetup"			"0"
+				"RequiresSetup"			"2"			}
+		}

@@ -1,0 +1,101 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_circlet"					"ITEM_EXTENSION"
+				"item_boots"					"ITEM_CORE"
+
+
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_gauntlets"				"ITEM_EXTENSION"
+
+				"item_recipe_bracer"			"ITEM_EXTENSION"
+				"item_bracer"					"ITEM_DERIVED"
+				"item_robe"						"ITEM_EXTENSION"
+				"item_recipe_ancient_janggo"		"ITEM_EXTENSION"
+				"item_ancient_janggo"			"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_mithril_hammer"			"ITEM_EXTENSION"
+				"item_mithril_hammer"			"ITEM_EXTENSION"
+				"item_recipe_desolator"			"ITEM_EXTENSION"
+				"item_desolator"				"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_sange"				"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+				"item_sange_and_yasha"			"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_recipe_sphere"			"ITEM_LUXURY"
+				"item_sphere"				"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_monkey_king_bar"			"ITEM_DERIVED"
+
+				"item_relic"					"ITEM_LUXURY"
+
+				"item_javelin"					"ITEM_LUXURY"
+				"item_belt_of_strength"			"ITEM_LUXURY"
+				"item_recipe_basher"			"ITEM_LUXURY"
+				"item_basher"					"ITEM_DERIVED"
+
+				"item_abyssal_blade"			"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"bounty_hunter_wind_walk"
+				"2"		"bounty_hunter_jinada"
+				"3"		"bounty_hunter_shuriken_toss"
+				"4"		"bounty_hunter_shuriken_toss"
+				"5"		"bounty_hunter_jinada"
+				"6"		"bounty_hunter_track"
+				"7"		"bounty_hunter_jinada"
+				"8"		"bounty_hunter_jinada"
+				"9"		"bounty_hunter_shuriken_toss"
+				"10"	"bounty_hunter_wind_walk"
+				"11"	"bounty_hunter_track"
+				"12"	"bounty_hunter_shuriken_toss"
+				"13"	"bounty_hunter_wind_walk"
+				"14"	"bounty_hunter_wind_walk"
+				"15"	"attribute_bonus"
+				"16"	"bounty_hunter_track"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"		"DOTA_BOT_SEMI_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"1"
+				"RequiresBabysit"		"5"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"2"			}
+		}

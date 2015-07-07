@@ -1,0 +1,104 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_ring_of_protection"		"ITEM_CORE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_boots"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_energy_booster"			"ITEM_CORE"
+				"item_arcane_boots"				"ITEM_DERIVED"
+
+				"item_ring_of_regen"			"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_recipe_headdress"			"ITEM_CORE"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_chainmail"				"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_recipe_buckler"			"ITEM_CORE"
+				"item_buckler"					"ITEM_DERIVED"
+				"item_recipe_mekansm"			"ITEM_CORE"
+				"item_mekansm"					"ITEM_DERIVED"
+
+				"item_ring_of_regen"            "ITEM_EXTENSION"
+				"item_staff_of_wizardry"        "ITEM_EXTENSION"
+				"item_recipe_force_staff"       "ITEM_EXTENSION"
+				"item_force_staff"              "ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_EXTENSION"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"			"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
+
+				"item_recipe_guardian_greaves"			"ITEM_EXTENSION"
+				"item_guardian_greaves"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"					"ITEM_DERIVED"
+
+				"item_recipe_sphere"				"ITEM_LUXURY"
+				"item_sphere"					"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_EXTENSION"
+				"item_boots"					"ITEM_CORE"
+				"item_travel_boots"				"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"jakiro_ice_path"
+				"2"		"jakiro_dual_breath"
+				"3"		"jakiro_ice_path"
+				"4"		"jakiro_dual_breath"
+				"5"		"jakiro_ice_path"
+				"6"		"jakiro_macropyre"
+				"7"		"jakiro_ice_path"
+				"8"		"jakiro_dual_breath"
+				"9"		"jakiro_dual_breath"
+				"10"	"jakiro_liquid_fire"
+				"11"	"jakiro_macropyre"
+				"12"	"jakiro_liquid_fire"
+				"13"	"jakiro_liquid_fire"
+				"14"	"jakiro_liquid_fire"
+				"15"	"attribute_bonus"
+				"16"	"jakiro_macropyre"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_PURE_SUPPORT | DOTA_BOT_PUSH_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"4"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"1"
+				"ProvidesSetup"			"3"
+				"RequiresSetup"			"3"			}
+		}

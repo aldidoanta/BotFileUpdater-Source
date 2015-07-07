@@ -1,0 +1,103 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				
+				"item_ring_of_protection"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED"
+
+				"item_boots"					"ITEM_CORE"
+				"item_ring_of_regen"			"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_soul_ring"			"ITEM_CORE"
+				"item_soul_ring"				"ITEM_DERIVED"
+				"item_energy_booster"			"ITEM_CORE"
+				"item_arcane_boots"				"ITEM_DERIVED"
+
+				"item_ring_of_regen"			"ITEM_CORE"	
+				"item_branches"					"ITEM_CORE"
+				"item_recipe_headdress"			"ITEM_CORE"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_lifesteal"			"ITEM_EXTENSION"
+				"item_recipe_vladmir"			"ITEM_EXTENSION"
+				"item_vladmir"					"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_cloak"				"ITEM_LUXURY"
+				"item_ring_of_regen"			"ITEM_LUXURY"
+				"item_ring_of_regen"			"ITEM_LUXURY"
+				"item_hood_of_defiance"			"ITEM_DERIVED"
+
+				"item_branches"					"ITEM_LUXURY"
+				"item_ring_of_regen"			"ITEM_LUXURY"
+				"item_recipe_headdress"			"ITEM_LUXURY"
+				"item_headdress"				"ITEM_DERIVED"
+
+				"item_recipe_pipe"			"ITEM_LUXURY"
+				"item_pipe"					"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_EXTENSION"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_energy_booster"			"ITEM_EXTENSION"
+				"item_recipe_bloodstone"		"ITEM_EXTENSION"
+				"item_bloodstone"				"ITEM_DERIVED"
+
+				"item_ogre_axe"				"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_sange"			"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"			"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_sange_and_yasha"			"ITEM_DERIVED"
+
+				"item_relic"					"ITEM_LUXURY"
+				"item_recipe_radiance"				"ITEM_LUXURY"
+				"item_radiance"					"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"omniknight_purification"
+				"2"		"omniknight_degen_aura"
+				"3"		"omniknight_purification"
+				"4"		"omniknight_repel"
+				"5"		"omniknight_purification"
+				"6"		"omniknight_guardian_angel"
+				"7"		"omniknight_purification"
+				"8"		"omniknight_degen_aura"
+				"9"		"omniknight_degen_aura"
+				"10"	"omniknight_degen_aura"
+				"11"	"omniknight_guardian_angel"
+				"12"	"omniknight_repel"
+				"13"	"omniknight_repel"
+				"14"	"omniknight_repel"
+				"15"	"attribute_bonus"
+				"16"	"omniknight_guardian_angel"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"		"DOTA_BOT_PURE_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"5"
+				"SurvivalRating"		"4"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"2"			}
+		}

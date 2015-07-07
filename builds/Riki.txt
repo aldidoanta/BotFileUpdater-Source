@@ -1,0 +1,107 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_slippers"					"ITEM_CORE"
+				"item_slippers"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+
+				"item_stout_shield"				"ITEM_CORE"
+				"item_poor_mans_shield"			"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_magic_stick"				"ITEM_CORE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_boots_of_elves"			"ITEM_CORE"
+				"item_gloves"					"ITEM_CORE"
+				"item_treads"					"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_recipe_diffusal_blade"		"ITEM_EXTENSION"
+				"item_diffusal_blade"			"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_belt_of_strength"				"ITEM_EXTENSION"
+				"item_recipe_sange"				"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+
+				"item_sange_and_yasha"				"ITEM_DERIVED"
+
+				"item_belt_of_strength"				"ITEM_EXTENSION"
+				"item_javelin"					"ITEM_EXTENSION"
+				"item_recipe_basher"				"ITEM_EXTENSION"
+				"item_basher"					"ITEM_DERIVED"
+
+				"item_recipe_diffusal_blade"			"ITEM_EXTENSION"
+
+				"item_eagle"					"ITEM_LUXURY"
+				"item_talisman_of_evasion"			"ITEM_LUXURY"
+				"item_quarterstaff"				"ITEM_LUXURY"
+				"item_butterfly"				"ITEM_DERIVED"
+
+				"item_ring_of_protection"			"ITEM_LUXURY"
+				"item_sobi_mask"				"ITEM_LUXURY"
+				"item_ring_of_basilius"				"ITEM_DERIVED"
+				"item_lifesteal"				"ITEM_LUXURY"
+				"item_ring_of_regen"			"ITEM_CORE"	
+				"item_branches"					"ITEM_CORE"
+				"item_recipe_headdress"			"ITEM_CORE"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_recipe_vladmir"				"ITEM_LUXURY"
+				"item_vladmir"					"ITEM_DERIVED"
+
+				"item_relic"					"ITEM_LUXURY"
+				"item_abyssal_blade"				"ITEM_DERIVED"	
+			}
+			"Build"
+			{
+				"1"		"riki_smoke_screen"
+				"2"		"riki_permanent_invisibility"
+				"3"		"riki_backstab"
+				"4"		"riki_permanent_invisibility"
+				"5"		"riki_permanent_invisibility"
+				"6"		"riki_blink_strike"
+				"7"		"riki_permanent_invisibility"
+				"8"		"riki_backstab"
+				"9"		"riki_backstab"
+				"10"	"riki_backstab"
+				"11"	"riki_blink_strike"
+				"12"	"riki_smoke_screen"
+				"13"	"riki_smoke_screen"
+				"14"	"riki_smoke_screen"
+				"15"	"attribute_bonus"
+				"16"	"riki_blink_strike"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_SEMI_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"2"
+				"RequiresBabysit"		"4"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"2"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"3"			}
+		}

@@ -1,0 +1,94 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_circlet"					"ITEM_CORE"
+				"item_stout_shield"				"ITEM_CORE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_magic_stick"				"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"				
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_belt_of_strength"			"ITEM_CORE"
+				"item_gloves"					"ITEM_CORE"
+				"item_treads"					"ITEM_DERIVED"
+
+				"item_helm_of_iron_will"			"ITEM_CORE"
+				"item_gloves"					"ITEM_EXTENSION"
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_recipe_armlet"			"ITEM_EXTENSION"
+				"item_armlet"					"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_recipe_manta"				"ITEM_LUXURY"
+				"item_manta"					"ITEM_DERIVED"
+
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_recipe_desolator"			"ITEM_LUXURY"
+				"item_desolator"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_hyperstone"				"ITEM_LUXURY"
+				"item_chainmail"				"ITEM_LUXURY"
+				"item_recipe_assault"			"ITEM_LUXURY"
+				"item_assault"					"ITEM_DERIVED"
+
+				"item_talisman_of_evasion"			"ITEM_LUXURY"
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_belt_of_strength"				"ITEM_LUXURY"
+				"item_recipe_sange"				"ITEM_LUXURY"
+				"item_sange"						"ITEM_DERIVED"
+				"item_heavens_halberd"					"ITEM_DERIVED"
+	
+					}
+			"Build"
+			{
+				"1"		"skeleton_king_hellfire_blast"
+				"2"		"attribute_bonus"
+				"3"		"skeleton_king_hellfire_blast"
+				"4"		"attribute_bonus"
+				"5"		"skeleton_king_hellfire_blast"
+				"6"		"skeleton_king_reincarnation"
+				"7"		"skeleton_king_hellfire_blast"
+				"8"		"skeleton_king_vampiric_aura"
+				"9"		"skeleton_king_mortal_strike"
+				"10"	"skeleton_king_mortal_strike"
+				"11"	"skeleton_king_reincarnation"
+				"12"	"skeleton_king_mortal_strike"
+				"13"	"skeleton_king_mortal_strike"
+				"14"	"skeleton_king_vampiric_aura"
+				"15"	"skeleton_king_vampiric_aura"
+				"16"	"skeleton_king_reincarnation"
+				"17"	"skeleton_king_vampiric_aura"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"
+						}
+			"HeroType"			"DOTA_BOT_TANK"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"5"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"5"
+				"RequiresFarm"			"5"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"2"			}
+		}

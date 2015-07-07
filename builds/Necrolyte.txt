@@ -1,0 +1,105 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+
+
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+
+				"item_mantle"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_mantle"					"ITEM_CORE | ITEM_SELLABLE"
+			
+				"item_boots"					"ITEM_CORE"
+
+				"item_ring_of_regen"			"ITEM_CORE"
+				"item_recipe_headdress"			"ITEM_CORE"
+				"item_headdress"				"ITEM_DERIVED"
+
+				"item_chainmail"				"ITEM_CORE"
+				"item_recipe_buckler"			"ITEM_CORE"
+				"item_buckler"					"ITEM_DERIVED"
+
+				"item_recipe_mekansm"			"ITEM_CORE"
+				"item_mekansm"					"ITEM_DERIVED"
+
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_EXTENSION"
+				"item_travel_boots"			"ITEM_DERIVED"
+
+				"item_vitality_booster"				"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+				"item_rod_of_atos"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_sheepstick"				"ITEM_DERIVED"
+
+				"item_energy_booster"			"ITEM_EXTENSION"
+				"item_boots"					"ITEM_CORE"
+				"item_arcane_boots"				"ITEM_DERIVED"
+				"item_recipe_guardian_greaves"			"ITEM_EXTENSION"
+				"item_guardian_greaves"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"			"ITEM_LUXURY"
+				"item_shivas_guard"			"ITEM_DERIVED"
+
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_refresher"			"ITEM_LUXURY"
+				"item_refresher"				"ITEM_DERIVED"
+							}
+			"Build"
+			{
+				"1"		"necrolyte_heartstopper_aura"
+				"2"		"necrolyte_death_pulse"
+				"3"		"necrolyte_death_pulse"
+				"4"		"necrolyte_sadist"
+				"5"		"necrolyte_death_pulse"
+				"6"		"necrolyte_reapers_scythe"
+				"7"		"necrolyte_death_pulse"
+				"8"		"necrolyte_sadist"
+				"9"		"necrolyte_sadist"
+				"10"	"necrolyte_sadist"
+				"11"	"necrolyte_reapers_scythe"
+				"12"	"necrolyte_heartstopper_aura"
+				"13"	"necrolyte_heartstopper_aura"
+				"14"	"necrolyte_heartstopper_aura"
+				"15"	"attribute_bonus"
+				"16"	"necrolyte_reapers_scythe"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_SEMI_CARRY | DOTA_BOT_PUSH_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"3"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"2"
+				"SurvivalRating"		"4"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"2"			}
+		}

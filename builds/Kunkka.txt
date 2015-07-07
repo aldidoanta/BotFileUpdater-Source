@@ -1,0 +1,106 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_gauntlets"				"ITEM_CORE"
+				"item_gauntlets"				"ITEM_CORE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_urn_of_shadows"			"ITEM_CORE"
+				"item_urn_of_shadows"				"ITEM_DERIVED| ITEM_SELLABLE"
+
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_broadsword"				"ITEM_EXTENSION"
+				"item_recipe_lesser_crit"		"ITEM_EXTENSION"
+				"item_lesser_crit"				"ITEM_DERIVED"
+
+				"item_broadsword"				"ITEM_EXTENSION"
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_recipe_lesser_crit"		"ITEM_EXTENSION"
+				"item_lesser_crit"				"ITEM_DERIVED"
+
+				"item_claymore"					"ITEM_LUXURY"
+				"item_shadow_amulet"			"ITEM_LUXURY"
+				"item_invis_sword"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_hyperstone"				"ITEM_LUXURY"
+				"item_chainmail"				"ITEM_LUXURY"
+				"item_recipe_assault"			"ITEM_LUXURY"
+				"item_assault"					"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_recipe_greater_crit"		"ITEM_LUXURY"
+				"item_greater_crit"				"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_recipe_greater_crit"		"ITEM_LUXURY"
+				"item_greater_crit"				"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_sange"				"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+				"item_recipe_silver_edge"			"ITEM_EXTENSION"
+				"item_silver_edge"			"ITEM_DERIVED"
+
+				"item_relic"					"ITEM_LUXURY"
+
+				"item_javelin"					"ITEM_LUXURY"
+				"item_belt_of_strength"			"ITEM_LUXURY"
+				"item_recipe_basher"			"ITEM_LUXURY"
+				"item_basher"					"ITEM_DERIVED"
+
+				"item_abyssal_blade"			"ITEM_DERIVED"
+
+
+			}
+			"Build"
+			{
+				"1"		"kunkka_tidebringer"
+				"2"		"kunkka_torrent"
+				"3"		"kunkka_tidebringer"
+				"4"		"kunkka_torrent"
+				"5"		"kunkka_tidebringer"
+				"6"		"kunkka_ghostship"
+				"7"		"kunkka_tidebringer"
+				"8"		"kunkka_torrent"
+				"9"		"kunkka_torrent"
+				"10"	"kunkka_x_marks_the_spot"
+				"11"	"kunkka_ghostship"
+				"12"	"kunkka_x_marks_the_spot"
+				"13"	"kunkka_x_marks_the_spot"
+				"14"	"kunkka_x_marks_the_spot"
+				"15"	"attribute_bonus"
+				"16"	"kunkka_ghostship"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_NUKER|DOTA_BOT_GANKER"
+			"LaningInfo"
+			{
+				"SoloDesire"			"3"
+				"RequiresBabysit"		"3"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"2"
+				"RequiresFarm"			"4"
+				"ProvidesSetup"			"3"
+				"RequiresSetup"			"2"			}
+		}

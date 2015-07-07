@@ -1,0 +1,109 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+
+				"item_magic_stick"				"ITEM_CORE"
+				"item_boots"					"ITEM_CORE"
+
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"	
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_regen"			"ITEM_CORE"
+
+
+				"item_recipe_soul_ring"			"ITEM_CORE"
+				"item_soul_ring"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+
+				"item_ring_of_health"			"ITEM_EXTENSION"
+				"item_void_stone"				"ITEM_EXTENSION"
+				"item_pers"						"ITEM_DERIVED"
+				"item_ultimate_orb"				"ITEM_EXTENSION"
+				"item_recipe_sphere"			"ITEM_EXTENSION"
+				"item_sphere"					"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_sheepstick"				"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_recipe_black_king_bar"		"ITEM_LUXURY"
+				"item_black_king_bar"			"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"	
+
+				"item_staff_of_wizardry"		"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_recipe_necronomicon"		"ITEM_LUXURY"
+				"item_necronomicon"				"ITEM_DERIVED"
+
+				}
+			"Build"
+			{
+				"1"		"bane_brain_sap"
+				"2"		"bane_nightmare"
+				"3"		"bane_brain_sap"
+				"4"		"bane_nightmare"
+				"5"		"bane_brain_sap"
+				"6"		"bane_fiends_grip"
+				"7"		"bane_brain_sap"
+				"8"		"bane_nightmare"
+				"9"		"bane_nightmare"
+				"10"		"bane_enfeeble"
+
+
+				"11"	"bane_fiends_grip"
+				"12"	"bane_enfeeble"
+				"13"	"bane_enfeeble"
+				"14"	"bane_enfeeble"
+
+				"15"	"attribute_bonus"
+
+				"16"	"bane_fiends_grip"
+
+
+
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+
+
+
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_GANKER"
+			"LaningInfo"
+			{
+				"SoloDesire"			"5"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"2"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"1"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"1"			}
+		}

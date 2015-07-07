@@ -1,0 +1,96 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_flask"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_branches"						"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_magic_stick"					"ITEM_CORE"
+				"item_boots"						"ITEM_CORE"
+
+				"item_branches"						"ITEM_CORE"
+
+				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"	
+				"item_blades_of_attack"				"ITEM_CORE"
+				"item_blades_of_attack"				"ITEM_CORE"
+				"item_phase_boots"					"ITEM_DERIVED"
+
+				"item_ring_of_regen"				"ITEM_EXTENSION"
+				"item_staff_of_wizardry"			"ITEM_EXTENSION"
+
+				"item_recipe_force_staff"			"ITEM_EXTENSION"
+				"item_force_staff"					"ITEM_DERIVED"
+
+				"item_quarterstaff"					"ITEM_LUXURY"
+				"item_robe"						"ITEM_LUXURY"
+				"item_sobi_mask"					"ITEM_LUXURY"
+				"item_oblivion_staff"				"ITEM_DERIVED"
+
+				"item_quarterstaff"					"ITEM_LUXURY"
+				"item_robe"						"ITEM_LUXURY"
+				"item_sobi_mask"					"ITEM_LUXURY"
+				"item_oblivion_staff"				"ITEM_DERIVED"
+
+				"item_recipe_orchid"				"ITEM_LUXURY"
+				"item_orchid"						"ITEM_DERIVED"
+
+				"item_ultimate_orb"					"ITEM_LUXURY"
+				"item_mystic_staff"					"ITEM_LUXURY"
+				"item_void_stone"					"ITEM_LUXURY"
+				"item_sheepstick"					"ITEM_DERIVED"
+
+				"item_demon_edge"					"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_monkey_king_bar"				"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+							}
+			"Build"
+			{
+				"1"		"windrunner_windrun"
+				"2"		"windrunner_shackleshot"
+				"3"		"windrunner_powershot"
+				"4"		"windrunner_powershot"
+				"5"		"windrunner_powershot"
+				"6"		"windrunner_shackleshot"
+				"7"		"windrunner_powershot"
+				"8"		"windrunner_shackleshot"
+				"9"		"windrunner_shackleshot"
+				"10"	"windrunner_windrun"
+				"11"	"windrunner_focusfire"
+				"12"	"windrunner_focusfire"
+				"13"	"windrunner_windrun"
+				"14"	"windrunner_windrun"
+				"15"	"attribute_bonus"
+				"16"	"windrunner_focusfire"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_GANKER"
+			"LaningInfo"
+			{
+				"SoloDesire"			"4"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"3"
+				"SurvivalRating"		"2"
+
+
+				"ProvidesSetup"			"2"
+				"RequiresFarm"			"3"
+
+			}
+		}

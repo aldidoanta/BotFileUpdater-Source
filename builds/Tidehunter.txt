@@ -1,0 +1,94 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_branches"				"ITEM_CORE"	
+				"item_branches"				"ITEM_CORE"
+				"item_flask"				"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"				"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"				"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"				"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_magic_stick"			"ITEM_CORE"
+
+
+				"item_boots"				"ITEM_CORE"
+
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_wand"			"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_energy_booster"		"ITEM_CORE"
+
+				"item_arcane_boots"			"ITEM_DERIVED"
+				"item_blink"				"ITEM_EXTENSION"
+
+				"item_cloak"				"ITEM_EXTENSION | ITEM_SELLABLE"
+
+				"item_chainmail"			"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_broadsword"			"ITEM_EXTENSION"
+				"item_blademail"			"ITEM_DERIVED"
+
+				"item_vitality_booster"			"ITEM_EXTENSION"
+
+				"item_void_stone"			"ITEM_LUXURY"
+				"item_ring_of_health"		"ITEM_LUXURY"
+				"item_pers"					"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_refresher"		"ITEM_LUXURY"
+				"item_refresher"			"ITEM_DERIVED"
+
+				"item_reaver"					"ITEM_LUXURY"
+				"item_recipe_heart"				"ITEM_LUXURY"
+				"item_heart"					"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_lotus_orb"			"ITEM_LUXURY"
+				"item_lotus_orb"				"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"tidehunter_gush"
+				"2"		"tidehunter_kraken_shell"
+				"3"		"tidehunter_kraken_shell"
+				"4"		"tidehunter_anchor_smash"
+				"5"		"tidehunter_anchor_smash"
+				"6"		"tidehunter_ravage"
+				"7"		"tidehunter_kraken_shell"
+				"8"		"tidehunter_kraken_shell"
+				"9"		"tidehunter_gush"
+				"10"		"tidehunter_gush"
+
+				"11"	"tidehunter_ravage"
+				"12"	"tidehunter_gush"
+				"13"	"tidehunter_anchor_smash"
+				"14"	"tidehunter_anchor_smash"
+
+				"15"	"attribute_bonus"
+
+				"16"	"tidehunter_ravage"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_TANK"
+			"LaningInfo"
+			{
+				"SoloDesire"			"1"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"4"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"5"
+				"RequiresSetup"			"0"			}
+		}

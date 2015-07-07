@@ -1,0 +1,91 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_boots"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_gauntlets"				"ITEM_CORE"
+				"item_gauntlets"				"ITEM_CORE"
+				"item_recipe_urn_of_shadows"	"ITEM_CORE"
+				"item_urn_of_shadows"			"ITEM_DERIVED"
+
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_EXTENSION"
+				"item_void_stone"				"ITEM_EXTENSION"
+				"item_pers"						"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_EXTENSION"
+				"item_recipe_sphere"			"ITEM_EXTENSION"
+				"item_sphere"					"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_EXTENSION"
+				"item_mystic_staff"				"ITEM_EXTENSION"
+				"item_recipe_shivas_guard"			"ITEM_EXTENSION"
+				"item_shivas_guard"				"ITEM_DERIVED"
+
+				"item_ogre_axe"				"ITEM_LUXURY"
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_recipe_black_king_bar"		"ITEM_LUXURY"
+				"item_black_king_bar"				"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"witch_doctor_paralyzing_cask"
+				"2"		"witch_doctor_maledict"
+				"3"		"witch_doctor_maledict"
+				"4"		"witch_doctor_paralyzing_cask"
+				"5"		"witch_doctor_maledict"
+				"6"		"witch_doctor_death_ward"
+				"7"		"witch_doctor_maledict"
+				"8"		"witch_doctor_paralyzing_cask"
+				"9"		"witch_doctor_paralyzing_cask"
+				"10"	"attribute_bonus"
+				"11"	"witch_doctor_death_ward"
+				"12"	"attribute_bonus"
+				"13"	"attribute_bonus"
+				"14"	"attribute_bonus"
+				"15"	"attribute_bonus"
+				"16"	"witch_doctor_death_ward"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"witch_doctor_voodoo_restoration"
+				"23"	"witch_doctor_voodoo_restoration"
+				"24"	"witch_doctor_voodoo_restoration"
+				"25"	"witch_doctor_voodoo_restoration"
+			}
+			"HeroType"			"DOTA_BOT_STUN_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"3"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"4"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"3"
+				"RequiresSetup"			"1"			}
+		}

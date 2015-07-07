@@ -1,0 +1,105 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+
+
+				"item_boots"					"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"	
+				"item_branches"					"ITEM_EXTENSION"
+
+				"item_branches"					"ITEM_EXTENSION"
+
+
+				"item_chainmail"				"ITEM_EXTENSION"
+
+				"item_recipe_buckler"			"ITEM_EXTENSION"
+				"item_buckler"					"ITEM_DERIVED"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_recipe_headdress"			"ITEM_EXTENSION"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_recipe_mekansm"			"ITEM_EXTENSION"
+				"item_mekansm"					"ITEM_DERIVED"
+				"item_cloak"					"ITEM_EXTENSION"
+
+				"item_point_booster"			"ITEM_LUXURY"
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_staff_of_wizardry"		"ITEM_LUXURY"
+				"item_blade_of_alacrity"		"ITEM_LUXURY"
+				"item_ultimate_scepter"			"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_EXTENSION"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_hood_of_defiance"			"ITEM_DERIVED"
+				"item_branches"					"ITEM_EXTENSION"
+				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_recipe_headdress"			"ITEM_EXTENSION"
+				"item_headdress"				"ITEM_DERIVED"
+				"item_recipe_pipe"				"ITEM_EXTENSION"
+				"item_pipe"						"ITEM_DERIVED"
+
+				"item_recipe_travel_boots"		"ITEM_LUXURY"
+				"item_travel_boots"				"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_EXTENSION"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_energy_booster"			"ITEM_EXTENSION"
+				"item_soul_booster"			"ITEM_DERIVED"
+				"item_mystic_staff"				"ITEM_EXTENSION"
+				"item_octarine_core"				"ITEM_DERIVED"
+
+				"item_void_stone"			"ITEM_LUXURY"
+				"item_ring_of_health"		"ITEM_LUXURY"
+				"item_pers"					"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"				"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
+				"item_recipe_refresher"		"ITEM_LUXURY"
+				"item_refresher"			"ITEM_DERIVED"			}
+			"Build"
+			{
+				"1"		"lich_dark_ritual"
+				"2"		"lich_frost_nova"
+				"3"		"lich_dark_ritual"
+				"4"		"lich_frost_nova"
+				"5"		"lich_frost_nova"
+				"6"		"lich_chain_frost"
+				"7"		"lich_frost_nova"
+				"8"		"lich_frost_armor"
+				"9"		"lich_dark_ritual"
+				"10"	"lich_frost_armor"
+				"11"	"lich_chain_frost"
+				"12"	"lich_dark_ritual"
+				"13"	"lich_frost_armor"
+				"14"	"lich_frost_armor"
+				"15"	"attribute_bonus"
+				"16"	"lich_chain_frost"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_PURE_SUPPORT | DOTA_BOT_TANK"
+			"LaningInfo"
+			{
+				"SoloDesire"			"5"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"5"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"2"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"1"			}
+		}

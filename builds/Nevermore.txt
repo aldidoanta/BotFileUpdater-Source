@@ -1,0 +1,94 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_slippers"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
+
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_wraith_band"				"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_boots"					"ITEM_CORE"
+
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_blades_of_attack"			"ITEM_EXTENSION"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_slippers"					"ITEM_CORE"		
+				"item_circlet"					"ITEM_CORE"
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_wraith_band"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_boots_of_elves"				"ITEM_EXTENSION"
+				"item_blade_of_alacrity"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_mithril_hammer"				"ITEM_EXTENSION"
+				"item_recipe_black_king_bar"			"ITEM_EXTENSION"
+				"item_black_king_bar"				"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_recipe_diffusal_blade"		"ITEM_EXTENSION"
+				"item_diffusal_blade"				"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_EXTENSION"
+				"item_recipe_manta"				"ITEM_EXTENSION"
+				"item_manta"					"ITEM_DERIVED"
+
+				"item_reaver"					"ITEM_LUXURY"
+				"item_vitality_booster"			"ITEM_LUXURY"
+				"item_recipe_heart"				"ITEM_LUXURY"
+				"item_heart"					"ITEM_DERIVED"
+
+				"item_recipe_diffusal_blade"		"ITEM_EXTENSION"
+
+				"item_demon_edge"					"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_javelin"						"ITEM_LUXURY"
+				"item_monkey_king_bar"				"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"nevermore_necromastery"
+				"2"		"nevermore_shadowraze1"
+				"3"		"nevermore_shadowraze1"
+				"4"		"nevermore_necromastery"
+				"5"		"nevermore_shadowraze1"
+				"6"		"nevermore_necromastery"
+				"7"		"nevermore_shadowraze1"
+				"8"		"nevermore_necromastery"
+				"9"		"nevermore_requiem"
+				"10"	"nevermore_dark_lord"
+				"11"	"nevermore_requiem"
+				"12"	"attribute_bonus"
+				"13"	"attribute_bonus"
+				"14"	"attribute_bonus"
+				"15"	"nevermore_dark_lord"
+				"16"	"nevermore_requiem"
+				"17"	"nevermore_dark_lord"
+				"18"	"nevermore_dark_lord"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"4"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"5"
+				"ProvidesSetup"			"0"
+				"RequiresSetup"			"2"			}
+		}

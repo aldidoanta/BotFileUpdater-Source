@@ -1,0 +1,93 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_boots"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_stout_shield"				"ITEM_CORE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_slippers"					"ITEM_CORE"
+				"item_slippers"					"ITEM_CORE"
+				"item_poor_mans_shield"			"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_magic_stick"				"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_boots_of_elves"			"ITEM_CORE"
+				"item_gloves"					"ITEM_CORE"
+				"item_power_treads"				"ITEM_DERIVED"
+
+				"item_boots_of_elves"			"ITEM_CORE"
+				"item_blade_of_alacrity"		"ITEM_CORE"
+				"item_recipe_yasha"				"ITEM_CORE"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_belt_of_strength"			"ITEM_EXTENSION"
+				"item_recipe_sange"				"ITEM_EXTENSION"
+				"item_sange"					"ITEM_DERIVED"
+
+				"item_chainmail"			"ITEM_EXTENSION"
+				"item_robe"				"ITEM_EXTENSION"
+				"item_broadsword"			"ITEM_EXTENSION"
+				"item_blademail"			"ITEM_DERIVED"
+
+				"item_mithril_hammer"			"ITEM_LUXURY"
+				"item_gloves"					"ITEM_LUXURY"
+				"item_recipe_maelstrom"			"ITEM_LUXURY"
+				"item_maelstrom"				"ITEM_DERIVED"
+
+				"item_hyperstone"				"ITEM_LUXURY"
+
+				"item_recipe_mjollnir"			"ITEM_LUXURY"
+				"item_mjollnir"					"ITEM_DERIVED"
+
+				"item_reaver"					"ITEM_LUXURY"
+				"item_vitality_booster"			"ITEM_LUXURY"
+				"item_recipe_heart"				"ITEM_LUXURY"
+				"item_heart"					"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_javelin"					"ITEM_LUXURY"
+				"item_monkey_king_bar"			"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"bloodseeker_thirst"
+				"2"		"bloodseeker_blood_bath"
+				"3"		"bloodseeker_thirst"
+				"4"		"bloodseeker_blood_bath"
+				"5"		"bloodseeker_thirst"
+				"6"		"bloodseeker_rupture"
+				"7"		"bloodseeker_blood_bath"
+				"8"		"bloodseeker_thirst"
+				"9"		"bloodseeker_blood_bath"
+				"10"	"attribute_bonus"
+				"11"	"bloodseeker_rupture"
+				"12"	"bloodseeker_bloodrage"
+				"13"	"bloodseeker_bloodrage"
+				"14"	"bloodseeker_bloodrage"
+				"15"	"bloodseeker_bloodrage"
+				"16"	"bloodseeker_rupture"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"1"
+				"RequiresBabysit"		"5"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"3"
+				"RequiresFarm"			"5"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"3"			}
+		}

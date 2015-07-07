@@ -1,0 +1,93 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_stout_shield"			   	"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_boots"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE | ITEM_SELLABLE"	
+				
+				"item_ring_of_protection"			"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_belt_of_strength"			"ITEM_CORE"
+				"item_gloves"					"ITEM_CORE"
+				"item_treads"					"ITEM_DERIVED"
+
+				"item_ring_of_health"			"ITEM_CORE"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_vanguard"					"ITEM_DERIVED"
+
+				"item_chainmail"				"ITEM_EXTENSION"
+				"item_broadsword"				"ITEM_EXTENSION"
+				"item_robe"						"ITEM_EXTENSION"
+				"item_blade_mail"				"ITEM_DERIVED"
+
+				"item_chainmail"				"ITEM_CORE"
+				"item_recipe_buckler"			"ITEM_CORE"
+				"item_buckler"					"ITEM_DERIVED"
+
+				"item_recipe_crimson_guard"		"ITEM_CORE"
+				"item_crimson_guard"				"ITEM_DERIVED"
+
+				"item_point_booster"			"ITEM_EXTENSION"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_energy_booster"			"ITEM_EXTENSION"
+				"item_soul_booster"			"ITEM_DERIVED"
+				"item_mystic_staff"				"ITEM_EXTENSION"
+				"item_octarine_core"				"ITEM_DERIVED"
+
+				"item_platemail"				"ITEM_LUXURY"
+				"item_hyperstone"				"ITEM_LUXURY"
+				"item_chainmail"				"ITEM_LUXURY"
+				"item_recipe_assault"			"ITEM_LUXURY"
+				"item_assault"					"ITEM_DERIVED"
+
+				"item_talisman_of_evasion"			"ITEM_LUXURY"
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_belt_of_strength"				"ITEM_LUXURY"
+				"item_recipe_sange"				"ITEM_LUXURY"
+				"item_sange"						"ITEM_DERIVED"
+				"item_heavens_halberd"					"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"bristleback_quill_spray"
+				"2"		"bristleback_bristleback"
+				"3"		"bristleback_viscous_nasal_goo"
+				"4"		"bristleback_quill_spray"
+				"5"		"bristleback_quill_spray"
+				"6"		"bristleback_warpath"
+				"7"		"bristleback_quill_spray"
+				"8"		"bristleback_bristleback"
+				"9"		"bristleback_bristleback"
+				"10"	"bristleback_bristleback"
+				"11"	"bristleback_warpath"
+				"12"	"bristleback_viscous_nasal_goo"
+				"13"	"bristleback_viscous_nasal_goo"
+				"14"	"bristleback_viscous_nasal_goo"
+				"15"	"attribute_bonus"
+				"16"	"bristleback_warpath"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"		"DOTA_BOT_TANK"
+			"LaningInfo"
+			{
+				"SoloDesire"			"2"
+				"RequiresBabysit"		"4"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"5"
+				"RequiresFarm"			"3"
+				"ProvidesSetup"			"2"
+				"RequiresSetup"			"1"			}
+		}

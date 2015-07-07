@@ -1,0 +1,95 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_circlet"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"				
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_slippers"					"ITEM_CORE"
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_wraith_band"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_blades_of_attack"			"ITEM_CORE"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_slippers"					"ITEM_CORE"
+				"item_recipe_wraith_band"		"ITEM_CORE"
+				"item_wraith_band"				"ITEM_DERIVED | ITEM_SELLABLE"
+
+				"item_ogre_axe"					"ITEM_EXTENSION"
+				"item_mithril_hammer"			"ITEM_EXTENSION"
+				"item_recipe_black_king_bar"		"ITEM_EXTENSION"
+				"item_black_king_bar"			"ITEM_DERIVED"
+
+				"item_blade_of_alacrity"		"ITEM_EXTENSION"
+				"item_boots_of_elves"			"ITEM_EXTENSION"
+				"item_recipe_yasha"				"ITEM_EXTENSION"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+				"item_recipe_manta"				"ITEM_LUXURY"
+				"item_manta"					"ITEM_DERIVED"
+
+				"item_talisman_of_evasion"		"ITEM_LUXURY"
+				"item_eagle"					"ITEM_LUXURY"
+				"item_quarterstaff"				"ITEM_LUXURY"
+				"item_butterfly"				"ITEM_DERIVED"
+
+				"item_lifesteal"				"ITEM_LUXURY"
+				"item_helm_of_iron_will"			"ITEM_LUXURY"
+				"item_helm_of_the_dominator"			"ITEM_DERIVED"
+				"item_reaver"					"ITEM_LUXURY"
+				"item_recipe_satanic"				"ITEM_LUXURY"
+				"item_satanic"				"ITEM_DERIVED"
+
+				"item_demon_edge"				"ITEM_LUXURY"
+				"item_javelin"					"ITEM_EXTENSION"
+				"item_javelin"					"ITEM_EXTENSION"
+				"item_monkey_king_bar"			"ITEM_DERIVED"				}
+			"Build"
+			{
+				"1"		"luna_lunar_blessing"
+				"2"		"luna_lucent_beam"
+				"3"		"luna_lucent_beam"
+				"4"		"attribute_bonus"
+				"5"		"luna_lucent_beam"
+				"6"		"luna_eclipse"
+				"7"		"luna_lucent_beam"
+				"8"		"attribute_bonus"
+				"9"		"luna_lunar_blessing"
+				"10"	"luna_moon_glaive"
+				"11"	"luna_eclipse"
+				"12"	"attribute_bonus"
+				"13"	"luna_lunar_blessing"
+				"14"	"luna_lunar_blessing"
+				"15"	"luna_moon_glaive"
+				"16"	"luna_eclipse"
+				"17"	"luna_moon_glaive"
+				"18"	"luna_moon_glaive"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"
+
+
+			}
+			"HeroType"		"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"			"2"
+				"RequiresBabysit"		"5"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"1"
+				"RequiresFarm"			"8"
+				"ProvidesSetup"			"1"
+				"RequiresSetup"			"3"			}
+		}

@@ -1,0 +1,96 @@
+		"Bot"
+		{
+			"Loadout"
+			{
+				"item_tango"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_flask"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_circlet"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
+
+				"item_branches"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"	
+
+				"item_boots"					"ITEM_CORE"
+
+				"item_gauntlets"				"ITEM_CORE | ITEM_SELLABLE"
+
+				"item_chainmail"				"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_recipe_medallion_of_courage"		"ITEM_CORE"
+				"item_medallion_of_courage"			"ITEM_DERIVED"
+
+				"item_blades_of_attack"				"ITEM_CORE"
+				"item_blades_of_attack"				"ITEM_CORE"
+				"item_phase_boots"				"ITEM_DERIVED"
+
+				"item_staff_of_wizardry"        	"ITEM_EXTENSION"
+				"item_ring_of_regen"            	"ITEM_EXTENSION"
+				"item_recipe_force_staff"       	"ITEM_EXTENSION"
+				"item_force_staff"         			"ITEM_DERIVED"
+
+				"item_point_booster"				"ITEM_EXTENSION"
+				"item_ogre_axe"					"ITEM_LUXURY"
+				"item_staff_of_wizardry"			"ITEM_LUXURY"
+				"item_blade_of_alacrity"			"ITEM_LUXURY"
+				"item_ultimate_scepter"				"ITEM_DERIVED"
+
+				"item_void_stone"					"ITEM_LUXURY"				
+				"item_sobi_mask"					"ITEM_LUXURY"
+				"item_staff_of_wizardry"			"ITEM_LUXURY"
+				"item_recipe_cyclone"				"ITEM_LUXURY"
+				"item_cyclone"						"ITEM_DERIVED"
+
+				"item_talisman_of_evasion"			"ITEM_EXTENSION"
+				"item_solar_crest"			"ITEM_DERIVED"
+
+				"item_ultimate_orb"				"ITEM_LUXURY"
+
+				"item_boots_of_elves"				"ITEM_LUXURY"
+				"item_blade_of_alacrity"			"ITEM_LUXURY"
+				"item_recipe_yasha"				"ITEM_LUXURY"
+				"item_yasha"					"ITEM_DERIVED"
+
+				"item_recipe_manta"				"ITEM_LUXURY"
+				"item_manta"					"ITEM_DERIVED"
+
+			}
+			"Build"
+			{
+				"1"		"vengefulspirit_magic_missile"
+				"2"		"vengefulspirit_wave_of_terror"
+				"3"		"vengefulspirit_magic_missile"
+				"4"		"vengefulspirit_wave_of_terror"
+				"5"		"vengefulspirit_magic_missile"
+				"6"		"vengefulspirit_nether_swap"
+				"7"		"vengefulspirit_magic_missile"
+				"8"		"vengefulspirit_wave_of_terror"
+				"9"		"vengefulspirit_wave_of_terror"
+				"10"	"vengefulspirit_command_aura"
+				"11"	"vengefulspirit_nether_swap"
+				"12"	"vengefulspirit_command_aura"
+				"13"	"vengefulspirit_command_aura"
+				"14"	"vengefulspirit_command_aura"
+				"15"	"attribute_bonus"
+				"16"	"vengefulspirit_nether_swap"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"			}
+			"HeroType"			"DOTA_BOT_STUN_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"			"0"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"4"
+				"SurvivalRating"		"2"
+				"RequiresFarm"			"1"
+				"ProvidesSetup"			"4"
+				"RequiresSetup"			"0"			}
+		}
