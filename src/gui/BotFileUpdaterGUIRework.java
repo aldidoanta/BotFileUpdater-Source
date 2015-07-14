@@ -18,35 +18,43 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileFilter;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
 
+import validator.Validator;
+import core.BotImpl;
 import core.BuildReader;
 import core.BuildSaver;
 import core.FileUpdater;
-import core.BotImpl;
 import core.ItemRecipe;
-
-import java.awt.BorderLayout;
-
-import javax.swing.JComboBox;
-import javax.swing.JRadioButton;
-import javax.swing.ButtonGroup;
 
 public class BotFileUpdaterGUIRework implements ActionListener{
 
 	private JFrame frame;
 	JButton loadOldFile, createNewFile, saveBuild, addItem;
-	JTextArea botEditor, debug;
+	JTextArea botEditor;
+	JList<String> debug; //change debug type from JTextArea 
+	DefaultListModel<String> listModel; //model for the debug JList
 	JCheckBox useOldBuild;
 	JRadioButton rdbtnCore, rdbtnExtension, rdbtnLuxury;
 	JScrollPane botEditorScrollPane, debugScrollPane;
@@ -57,9 +65,14 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 	File currentEditorFile;
 	private JButton loadInEditor;
 	private JButton saveFromEditor;
+	private JButton validateBuild;
 	DefaultComboBoxModel<String> chooseBotFileModel = new DefaultComboBoxModel<String>();
 	DefaultComboBoxModel<String> addItemModel = new DefaultComboBoxModel<String>();
 	HashMap<String, ItemRecipe> itemMap;
+	
+	//line number
+	TextLineNumber botEditorLineNumber;
+	
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	/**
 	 * Launch the application.
@@ -113,12 +126,46 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		botEditorScrollPane = new JScrollPane();
 		botEditorScrollPane.setViewportView(botEditor);
 		botEditorScrollPane.setBounds(323, 16, 801, 593);
+		
+		//init line number
+		botEditorLineNumber = new TextLineNumber(botEditor);
+		botEditorScrollPane.setRowHeaderView(botEditorLineNumber);
+		
 		frame.getContentPane().add(botEditorScrollPane);
 		
-		debug = new JTextArea();
+		listModel = new DefaultListModel<String>();
+		debug = new JList<String>(listModel);
 		debug.setBounds(10, 620, 906, 130);
-		debug.setEditable(false);
-		debug.setText("");
+		//add event listener for debug JList
+		debug.addListSelectionListener(new ListSelectionListener() {
+			
+			Pattern linenumberPattern = Pattern.compile("^Error at line ([0-9]+).*");
+			Matcher linenumberMatcher = null;
+			
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				if(!e.getValueIsAdjusting()){
+					String selected = debug.getSelectedValue();
+					linenumberMatcher = linenumberPattern.matcher(selected);
+					if(linenumberMatcher.find())	{
+						//move botfile editor caret to the said line number, and highlight the line
+						int lineNumber = Integer.parseInt(linenumberMatcher.group(1)); 
+						if (lineNumber > 0){
+							try {
+								int startOffset = botEditor.getLineStartOffset(lineNumber-1);
+								int endOffset = botEditor.getLineEndOffset(lineNumber-1);
+								botEditor.setCaretPosition(startOffset);
+								botEditor.getHighlighter().removeAllHighlights();
+								botEditor.getHighlighter().addHighlight(startOffset, endOffset, new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW));
+							} catch (BadLocationException ble) {
+								ble.printStackTrace();
+							}
+						}
+					}
+				}
+			}
+		});
+		
 		debugScrollPane = new JScrollPane();
 		debugScrollPane.setViewportView(debug);
 		debugScrollPane.setBounds(10, 620, 590, 130);
@@ -156,6 +203,11 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		saveFromEditor.setBounds(30, 253, 227, 25);
 		saveFromEditor.addActionListener(this);
 		frame.getContentPane().add(saveFromEditor);
+		
+		validateBuild = new JButton("Validate Build");
+		validateBuild.setBounds(30, 285, 227, 25);
+		validateBuild.addActionListener(this);
+		frame.getContentPane().add(validateBuild);
 		
 		JLabel debugLable = new JLabel("Log:");
 		debugLable.setBounds(10, 595, 46, 14);
@@ -239,6 +291,9 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		if (e.getSource() == saveFromEditor){
 			this.saveFromEditor();
 		}
+		if(e.getSource() == validateBuild){
+			Validator.validateBuild(botEditor.getText(), (String)chooseBotFile.getSelectedItem(), listModel);
+		}
 		if (e.getSource() == loadInEditor){
 			this.loadInEditor();
 		}
@@ -313,13 +368,13 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 				builder.append(lineIn).append("\n");
 			}
 			botEditor.setText(builder.toString());
-			debug.append("Loaded into Editor: " + currentEditorFile.getAbsolutePath() + "\n");
+			listModel.addElement("Loaded into Editor: " + currentEditorFile.getAbsolutePath() + "\n");
 			debug.setBackground(Color.WHITE);
 			reader.close();
 		} catch (FileNotFoundException e) {
-			debug.append("File not found.");
+			listModel.addElement("File not found.");
 		} catch (IOException e) {
-			debug.append("I/O Exception.");
+			listModel.addElement("I/O Exception.");
 		}
 	}
 	
@@ -330,7 +385,7 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 			for (String s : buffer){
 				writer.write("\t\t" + s + "\n");
 			}
-			debug.append("Saved Editor content to: " + currentEditorFile.getAbsolutePath() + "\n");
+			listModel.addElement("Saved Editor content to: " + currentEditorFile.getAbsolutePath() + "\n");
 			debug.setBackground(Color.WHITE);
 			writer.flush();
 			writer.close();
@@ -348,65 +403,65 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		int returnVal = fc.showOpenDialog(frame);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			oldFilePath = fc.getSelectedFile().getPath();
-			debug.append("Opened file: " + oldFilePath + "\n");
+			listModel.addElement("Opened file: " + oldFilePath + "\n");
 			debug.setBackground(Color.WHITE);
 		} else {
-			debug.append("File selection cancelled by user\n");
+			listModel.addElement("File selection cancelled by user\n");
 			debug.setBackground(Color.WHITE);
 		}
 	}
 
 	private void createNewFile(){
 		if (this.oldFilePath == null && !useOldBuild.isSelected()){
-			debug.append("Open old file or use saved hero builds\n");
+			listModel.addElement("Open old file or use saved hero builds\n");
 		} else {
 			if (!useOldBuild.isSelected()){
 				int returnVal = fc.showOpenDialog(frame);
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
 					newFilePath = fc.getSelectedFile().getPath();
 					debug.setBackground(Color.WHITE);
-					debug.append("Opened file: " + newFilePath + "\n");
-					debug.append("Creating file...\n");
+					listModel.addElement("Opened file: " + newFilePath + "\n");
+					listModel.addElement("Creating file...\n");
 					try {
 						FileUpdater updater = new FileUpdater(newFilePath);
 						BuildReader reader = new BuildReader(oldFilePath);
 						updater.update(reader.readBuilds());
 					} catch (Exception e){
-						debug.append("Exception encountered!\n" + e + "\n");
+						listModel.addElement("Exception encountered!\n" + e + "\n");
 						debug.setBackground(Color.RED);
 						return;
 					}
-					debug.append("File creation successful: " + newFilePath + "\n");
+					listModel.addElement("File creation successful: " + newFilePath + "\n");
 					debug.setBackground(Color.GREEN);
 					return;
 				} else {
-					debug.append("File selection cancelled by user\n");
+					listModel.addElement("File selection cancelled by user\n");
 					return;
 				}
 			} else {
 				File test = new File("builds\\Bane.txt");
 				if (!test.exists()){
-					debug.append("No old build to load\n");
+					listModel.addElement("No old build to load\n");
 				} else {
 					int returnVal = fc.showOpenDialog(frame);
 					if (returnVal == JFileChooser.APPROVE_OPTION) {
 						newFilePath = fc.getSelectedFile().getPath();
 						debug.setBackground(Color.WHITE);
-						debug.append("Opened file: " + newFilePath + "\n");
-						debug.append("Creating file...\n");
+						listModel.addElement("Opened file: " + newFilePath + "\n");
+						listModel.addElement("Creating file...\n");
 						try {
 							FileUpdater updater = new FileUpdater(newFilePath);
 							updater.updateFromSavedBuild();
 						} catch (Exception e){
-							debug.append("Exception encountered!\n" + e + "\n");
+							listModel.addElement("Exception encountered!\n" + e + "\n");
 							debug.setBackground(Color.RED);
 							return;
 						}
 						debug.setBackground(Color.GREEN);
-						debug.append("File creation successful. Updated File:  " + newFilePath + "\n");
+						listModel.addElement("File creation successful. Updated File:  " + newFilePath + "\n");
 						return;
 					} else {
-						debug.append("File selection cancelled by user\n");
+						listModel.addElement("File selection cancelled by user\n");
 						return;
 					}
 				}
@@ -416,7 +471,7 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 	
 	private void saveBuild(){
 		if (oldFilePath == null){
-			debug.append("Load old file first\n");
+			listModel.addElement("Load old file first\n");
 		} else {
 			File test = new File("builds\\Bane.txt");
 			if (!test.exists()){
@@ -425,11 +480,11 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 					saver.saveBuilds();
 					this.getBuildFiles();
 				} catch (Exception e){
-					debug.append("Exception encountered!\n" + e + "\n");
+					listModel.addElement("Exception encountered!\n" + e + "\n");
 					debug.setBackground(Color.WHITE);
 					return;
 				}
-				debug.append("Build saved.\n");
+				listModel.addElement("Build saved.\n");
 				debug.setBackground(Color.WHITE);
 			} else {
 				int n = JOptionPane.showOptionDialog(frame,
@@ -442,14 +497,14 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 						saver.saveBuilds();
 						this.getBuildFiles();
 					} catch (Exception e){
-						debug.append("Exception encountered!\n" + e + "\n");
+						listModel.addElement("Exception encountered!\n" + e + "\n");
 						debug.setBackground(Color.WHITE);
 						return;
 					}
-					debug.append("New build saved.\n");
+					listModel.addElement("New build saved.\n");
 					debug.setBackground(Color.WHITE);
 				} else {
-					debug.append("Aborted saving build\n");
+					listModel.addElement("Aborted saving build\n");
 					debug.setBackground(Color.WHITE);
 				}
 			}
