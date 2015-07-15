@@ -66,6 +66,7 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 	private JButton loadInEditor;
 	private JButton saveFromEditor;
 	private JButton validateBuild;
+	private JButton clearLog;
 	DefaultComboBoxModel<String> chooseBotFileModel = new DefaultComboBoxModel<String>();
 	DefaultComboBoxModel<String> addItemModel = new DefaultComboBoxModel<String>();
 	HashMap<String, ItemRecipe> itemMap;
@@ -133,34 +134,37 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		
 		frame.getContentPane().add(botEditorScrollPane);
 		
+		//init debug JList and listModel
 		listModel = new DefaultListModel<String>();
 		debug = new JList<String>(listModel);
 		debug.setBounds(10, 620, 906, 130);
-		//add event listener for debug JList
-		debug.addListSelectionListener(new ListSelectionListener() {
+		debug.addListSelectionListener(new ListSelectionListener() { //add event listener for debug JList
 			
+			//used for line number highlighting
 			Pattern linenumberPattern = Pattern.compile("^Error at line ([0-9]+).*");
 			Matcher linenumberMatcher = null;
 			
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
 				if(!e.getValueIsAdjusting()){
+					botEditor.getHighlighter().removeAllHighlights(); //delete previous highlight (if any)
 					String selected = debug.getSelectedValue();
-					linenumberMatcher = linenumberPattern.matcher(selected);
-					if(linenumberMatcher.find())	{
-						//move botfile editor caret to the said line number, and highlight the line
-						int lineNumber = Integer.parseInt(linenumberMatcher.group(1)); 
-						if (lineNumber > 0){
-							try {
-								int startOffset = botEditor.getLineStartOffset(lineNumber-1);
-								int endOffset = botEditor.getLineEndOffset(lineNumber-1);
-								botEditor.setCaretPosition(startOffset);
-								botEditor.getHighlighter().removeAllHighlights();
-								botEditor.getHighlighter().addHighlight(startOffset, endOffset, new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW));
-							} catch (BadLocationException ble) {
-								ble.printStackTrace();
+					if(selected != null){
+						linenumberMatcher = linenumberPattern.matcher(selected);
+						if(linenumberMatcher.find())	{
+							//move botfile editor caret to the line number, and highlight the line
+							int lineNumber = Integer.parseInt(linenumberMatcher.group(1)); 
+							if (lineNumber > 0){
+								try {
+									int startOffset = botEditor.getLineStartOffset(lineNumber-1); //because line number index is actually 0-based
+									int endOffset = botEditor.getLineEndOffset(lineNumber-1);
+									botEditor.setCaretPosition(startOffset);
+									botEditor.getHighlighter().addHighlight(startOffset, endOffset, new DefaultHighlighter.DefaultHighlightPainter(Color.YELLOW));
+								} catch (BadLocationException ble) {
+									ble.printStackTrace();
+								}
 							}
-						}
+						}	
 					}
 				}
 			}
@@ -208,6 +212,11 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		validateBuild.setBounds(30, 285, 227, 25);
 		validateBuild.addActionListener(this);
 		frame.getContentPane().add(validateBuild);
+		
+		clearLog = new JButton("Clear Log");
+		clearLog.setBounds(40, 590, 95, 25);
+		clearLog.addActionListener(this);
+		frame.getContentPane().add(clearLog);
 		
 		JLabel debugLable = new JLabel("Log:");
 		debugLable.setBounds(10, 595, 46, 14);
@@ -291,14 +300,21 @@ public class BotFileUpdaterGUIRework implements ActionListener{
 		if (e.getSource() == saveFromEditor){
 			this.saveFromEditor();
 		}
-		if(e.getSource() == validateBuild){
-			Validator.validateBuild(botEditor.getText(), (String)chooseBotFile.getSelectedItem(), listModel);
-		}
 		if (e.getSource() == loadInEditor){
 			this.loadInEditor();
 		}
 		if (e.getSource() == addItem){
 			this.addItem();
+		}
+		if(e.getSource() == validateBuild){
+			botEditor.getHighlighter().removeAllHighlights();
+			listModel.clear();
+			Validator validator = new Validator();
+			validator.validateBuild(botEditor.getText(), (String)chooseBotFile.getSelectedItem(), listModel);
+		}
+		if(e.getSource() == clearLog){
+			botEditor.getHighlighter().removeAllHighlights();
+			listModel.clear();
 		}
 	}
 

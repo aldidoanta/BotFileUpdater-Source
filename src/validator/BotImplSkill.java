@@ -1,5 +1,10 @@
 package validator;
-//enumeration for hero abilities
+
+/**
+ * Enumeration for hero abilities
+ * @author aldidoanta
+ *
+ */
 public enum BotImplSkill{
 	Axe("Axe", new String[]{"axe_berserkers_call", "axe_battle_hunger", "axe_counter_helix"}, "axe_culling_blade"),
 	Bane("Bane", new String[]{"bane_enfeeble", "bane_brain_sap", "bane_nightmare"}, "bane_fiends_grip"),

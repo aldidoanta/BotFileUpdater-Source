@@ -1,7 +1,8 @@
 package validator;
+
 /**
  * Stores constants needed for Validator class
- *
+ * @author aldidoanta
  *
  */
 public final class ValidatorConst {

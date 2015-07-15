@@ -10,128 +10,49 @@ import javax.swing.DefaultListModel;
 
 /**
  * Class for validator functionality of BotFileUpdater
- *
+ * @author aldidoanta
  *
  */
 public class Validator {
-	
-	/**
-	 * Gets value of an attribute (surrounded by "{ }") that exists in a string
-  	 * isObj determines whether the value is an object or not
-	 * @param attr name of the attribute 
-	 * @param str the string where the attribute and its value exist
-	 * @param isObject search options, true if the attribute-value pair is an object
-	 * @return value of attribute attr; null if attr is not found within the string str
-	 */
-	public String getVDFObject(String attr, String str, boolean isObject){
-		String result = null;
-		int beginIdx, endIdx, currentIdx;
-		int braceCounter, quoteCounter;
-		boolean isFound;
 		
-		//regex used to find the attr
-		String searchAttr = "\"" + attr + "\""; //add double quotes
-	    String regex_obj = "\"" + attr + "\"\\s*\\{";
-	    String regex_nonobj = "\"" + attr + "\"\\s*";
-	    
-	    //create Pattern object and compile
-	    Pattern regexp_obj = Pattern.compile(regex_obj);
-	    Pattern regexp_nonobj = Pattern.compile(regex_nonobj);
-	    
-	    //create Matcher object
-	    Matcher m = (isObject ? regexp_obj.matcher(str) : regexp_nonobj.matcher(str)); //use regex based on isObj value
-	    if(m.find()){
-	    	beginIdx = m.start() + searchAttr.length();
-	        endIdx = -1;
-
-	        braceCounter = 0;
-	        isFound = false;
-	        currentIdx = beginIdx;
-
-	        if(isObject){ //if the value is an object
-	          //assume the file is a valid VDF
-	          do{
-	            if(str.charAt(currentIdx) == '{'){
-	              if(braceCounter == 0){ //check the first open brace
-	                beginIdx = currentIdx;
-	              }
-	              braceCounter++;
-	              if(braceCounter == 0){
-	                isFound = true;
-	              }
-	            }
-	            else if(str.charAt(currentIdx) == '}'){
-	              braceCounter--;
-	              if(braceCounter == 0){
-	                isFound = true;
-	              }
-	            }
-	            currentIdx++;
-	          }
-	          while(!isFound);
-
-	          endIdx = currentIdx - 1; //assign the index of the closing brace
-	        }
-	        else{ //not an Object
-	          quoteCounter = 0;
-	          while(quoteCounter < 2){
-	            if(str.charAt(currentIdx) == '\"'){
-	              quoteCounter++;
-	              if(quoteCounter == 1){
-	                beginIdx = currentIdx + 1; //get first character inside quote
-	              }
-	              else if(quoteCounter == 2){
-	                endIdx = currentIdx - 1; //get last character inside quote
-	              }
-	            }
-	            currentIdx++;
-	          }
-	        }
-	        
-	        result = str.substring(beginIdx,endIdx+1); 
-	    }
-	    
-		return result;
-	}
-	
 	/**
 	 * Validates stored build, checking for errors
 	 * @param the string of the bot build
 	 * @param hero the name of the hero
 	 */
-	public static void validateBuild(String content, String hero, DefaultListModel<String> listModel){
+	public void validateBuild(String content, String hero, DefaultListModel<String> listModel){
 		try {
 			int lineNumber = 0; //current line number
-			int braceCount = 0; //used for reading braces
+			int braceCount = 0; //used for counting the number of braces
 			String key = null; //current examined key
-			String line = null; //used for reading the multi-line string
+			String line = null; //used for reading the multiline string
 			
-			//used for regex
+			//used in key-value pattern matching
 			Pattern keyPattern = Pattern.compile("^\\s*\"(\\w+)\"\\s*$");
 			Pattern keyvaluePattern = Pattern.compile("^\\s*\"(\\w+)\"\\s+\"(.+)\"\\s*$");
 			Matcher keyMatcher = null;
-			Matcher keyValueMatcher = null;
+			Matcher keyvalueMatcher = null;
 			
 			BufferedReader br = new BufferedReader(new StringReader(content));
-			while((line = br.readLine()) != null){
+			while((line = br.readLine()) != null){ //read line by line
 				lineNumber++;
 				
-				//search for "key"
+				//search for a single key or a pair of key-value
 				keyMatcher = keyPattern.matcher(line);
-				keyValueMatcher = keyvaluePattern.matcher(line);
+				keyvalueMatcher = keyvaluePattern.matcher(line);
 				
 				if(keyMatcher.find()){
-					
+					String keyName = keyMatcher.group(1); 
 					if(key == null){
-						if(!keyMatcher.group(1).equals("Bot")){
-							printError(lineNumber, "\"Bot\" must be the first key", listModel);
+						if(keyName.equals("Bot")){
+							key = "Bot"; //found "Bot" key
 						}
 						else{
-							key = "Bot"; //found "Bot" key
+							printError(lineNumber, "\"Bot\" must be the first key", listModel);
 						}
 					}
 					else if (key.equals("Bot")){
-						switch(keyMatcher.group(1)){ //search for child of "Bot"
+						switch(keyName){ //search for subkey of "Bot" key
 							case "Loadout":
 								key = "Loadout";
 								break;
@@ -143,20 +64,20 @@ public class Validator {
 								break;
 							case "HeroType":
 							case "AggressionFactor":
-								printError(lineNumber, "\""+keyMatcher.group(1)+"\""+" needs a value next to it, enclosed with quotes", listModel);
+								printError(lineNumber, "\"" + keyName + "\"" + " needs a value next to it, enclosed in quotes", listModel);
 								break;
 							default:
-								printError(lineNumber, "\""+keyMatcher.group(1)+"\""+" is not a valid child of \"Bot\"", listModel);
+								printError(lineNumber, "\"" + keyName + "\""+" is not a valid subkey of \"Bot\"", listModel);
 						}
 					}
 				}
-				else if(keyValueMatcher.find()){
-					
+				else if(keyvalueMatcher.find()){
+					String keyName = keyvalueMatcher.group(1); 
 					if (key.equals("Bot")){
-						switch(keyValueMatcher.group(1)){ //search for child of "Bot"
+						switch(keyName){ //search for subkey of "Bot"
 							case "HeroType":
 								
-								String herotypeValue = keyValueMatcher.group(2);
+								String herotypeValue = keyvalueMatcher.group(2);
 								//validate HeroType
 								String[] roleTokens = herotypeValue.split("\\|");
 								for (String token : roleTokens){
@@ -168,9 +89,9 @@ public class Validator {
 								break;
 							case "AggressionFactor":
 								
-								String aggressionfactorValue = keyValueMatcher.group(2); 
+								String aggressionfactorValue = keyvalueMatcher.group(2); 
 								//validate AggressionFactor
-								if(Arrays.asList(ValidatorConst.HERO_AGGRESIONFACTOR).contains(hero)){ //checks if current hero has "AggressionFactor" attribute
+								if(Arrays.asList(ValidatorConst.HERO_AGGRESIONFACTOR).contains(hero)){ //checks if current hero has "AggressionFactor" key
 									try{
 										Float.parseFloat(aggressionfactorValue); //checks if "AggressionFactor" value is a valid float number
 									}
@@ -183,13 +104,13 @@ public class Validator {
 								}
 								break;
 							default:
-								printError(lineNumber, "\""+keyValueMatcher.group(1)+"\""+" is not a valid child of \"Bot\"", listModel);
+								printError(lineNumber, "\""+keyName+"\""+" is not a valid child of \"Bot\"", listModel);
 						}
 					}
 					else if (key.equals("Loadout")) {
 						
-						String loadoutKey = keyValueMatcher.group(1);
-						String loadoutValue = keyValueMatcher.group(2);
+						String loadoutKey = keyvalueMatcher.group(1);
+						String loadoutValue = keyvalueMatcher.group(2);
 						//validate Loadout
 						if(!Arrays.asList(ValidatorConst.ITEM).contains(loadoutKey)){
 							printError(lineNumber, "\"" + loadoutKey + "\" is not a valid value for item build", listModel);
@@ -205,7 +126,7 @@ public class Validator {
 						//validate Build
 						String[]normalSkill = null;
 						String ultSkill = null;
-						String buildValue = keyValueMatcher.group(2);
+						String buildValue = keyvalueMatcher.group(2);
 						
 						//search for hero skill in BotImplSkill enum
 						for(BotImplSkill b: BotImplSkill.values()){
@@ -216,7 +137,7 @@ public class Validator {
 							}
 						}
 						
-						//check if the attribute value is valid
+						//check if the skill name is valid
 						//TODO skill level requirement validation
 						if((!Arrays.asList(normalSkill).contains(buildValue))
 								&& (!buildValue.equals(ultSkill))
@@ -227,10 +148,10 @@ public class Validator {
 					}
 					else if (key.equals("LaningInfo")) {
 						//validate LaningInfo
-						String laninginfoKey = keyValueMatcher.group(1);
-						String laninginfoValue = keyValueMatcher.group(2);
+						String laninginfoKey = keyvalueMatcher.group(1);
+						String laninginfoValue = keyvalueMatcher.group(2);
 						try{
-							Integer.parseInt(laninginfoValue); //checks if the attribute value is a valid number
+							Integer.parseInt(laninginfoValue); //checks if the value is a valid number
 						}
 						catch (NumberFormatException e){
 							printError(lineNumber, "the value of \""+ laninginfoKey + "\" is not a valid number", listModel);
@@ -269,13 +190,12 @@ public class Validator {
 	}
 	
 	/**
-	 * prints error message to log
+	 * Prints error message to log
 	 * @param lineNumber current line number where the error occurs
-	 * @param listModel TODO
-	 * @param messsage the error message
+	 * @param message the error message
+	 * @param listModel the DefaultListModel of the log JList
 	 */
-	public static void printError(int lineNumber, String message, DefaultListModel<String> listModel){
+	public void printError(int lineNumber, String message, DefaultListModel<String> listModel){
 		listModel.addElement("Error at line " + lineNumber + ": " + message);
 	}
-	
 }
